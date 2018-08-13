@@ -1,0 +1,19 @@
+Each location's object
+
+- minimum customers per hours
+- maximum customers per hours
+- Aaverage cookies purchased per customer
+- an array of projected customers each hour
+- daily customers []
+- daily cookies []
+- daily total of cookies
+
+
+Methods
+- to make daily customers[]
+- to make daily cookies []
+- daily total method
+- render method
+- Or a standalone random maker
+- setup empty array calculations and push() into the array
+- stand alone arrays of listed hours
