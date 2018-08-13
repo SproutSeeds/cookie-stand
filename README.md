@@ -1,2 +1,1 @@
-# lab-6
-Cookies project.
+# Boiler Plate for future projects reference
