@@ -1,0 +1,64 @@
+#allSheWrote {
+    margin: 5px;
+    border: 5px, solid, purple;
+    padding: 50px;
+}
+
+#salesNav {
+    margin: 100px, 100px, 100px, 100px;
+    border: 5px, dotted, crimson;
+    padding: 5px;
+    content: center; 
+    top: 60%;
+    color: rgb(58, 226, 43);
+    background-color: rgb(48, 140, 238);
+    font-size: 75px;
+}
+
+.headingSales {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#salmonCookiesTitle {
+    margin: 30px;
+    border: 5px, solid, crimson;
+    font-weight: bold;
+    font-size: 40px;
+}
+ul {
+    margin: 10px;
+    background-color: aquamarine; 
+    border-color: blueviolet;  
+}
+h2 {
+    margin: 10px;
+    border-right: 5px, dotted, purple;
+    font-size: 25px;
+    font-family: 
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Rock Salt', sans-serif;
+    font-weight: bold;
+}
+body {
+    background-color: bisque;
+    background-image: url('/img/salmon.png');
+    background-image: center center;
+    background-image: cover no-repeat;
+    position: relative;   
+}
+img {
+    bottom: 100%;
+    left: 25%;
+    align-content: center;
+    position: relative;
+}
+li {
+    font-family: Verdana, Georgia, Arial, Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(135, 11, 11);
+}
