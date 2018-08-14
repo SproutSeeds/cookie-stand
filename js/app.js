@@ -5,7 +5,7 @@ var hourOfOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm'
 
 /////////////////First And Pike Object////////////////////////
 var firstAndpike = {
-  name: '1st And Pike',
+  name: '1st And Pike',//Key: 'Value' -- Pair
   min: 23,
   max: 65,
   avgCookieSale: 6.3,
