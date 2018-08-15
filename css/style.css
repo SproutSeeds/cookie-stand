@@ -59,6 +59,8 @@ li {
 }
 .tables {
     margin:50px;
+    position: relative;
+    left: 20%;
 }
 tr, th, td{
     padding:5px;
