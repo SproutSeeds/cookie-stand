@@ -1,4 +1,6 @@
-# Lab-7 Cookie Stand
-Created a table to display all of the data.
-Used a singular constructor function to build out the template for my objects/instances.
-Adding 3 prototypes to the constructor to data collect from the new obect calls.
+# Lab-8 Cookie Stand
+I have created the ability to add on more stores through creating input boxes with an event listener attached to these inputs that creates new store isntances, funnelling the inputted information through the already created constructor function.
+
+I also added a footer row that totals each hour block ending with a <th> element that states the totals of all of the hourly totals. 
+
+mmmmm....salmon cookies... <3

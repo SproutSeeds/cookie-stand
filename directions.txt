@@ -67,3 +67,11 @@ Public-Facing Page (index.html)
 // var renderStaffingTable = function() {
 
 // }
+
+
+////Day8/////
+What I want my salmon cookie stand to do:
+
+I am creating 4 input boxes that will take in the input of store name, minimum customers,maximum customers, average cookies purchased per customer.
+
+It will then display row by row, each store and all of the calculations for that object.
