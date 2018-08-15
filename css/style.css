@@ -3,7 +3,6 @@
     border: 5px, solid, purple;
     padding: 50px;
 }
-
 #salesNav {
     margin: 100px, 100px, 100px, 100px;
     border: 5px, dotted, crimson;
@@ -14,12 +13,10 @@
     background-color: rgb(48, 140, 238);
     font-size: 75px;
 }
-
 .headingSales {
     font-weight: bold;
     font-size: 20px;
 }
-
 #salmonCookiesTitle {
     margin: 30px;
     border: 5px, solid, crimson;
@@ -44,7 +41,6 @@ h1 {
 }
 body {
     background-color: bisque;
-    background-image: url('/img/salmon.png');
     background-image: center center;
     background-image: cover no-repeat;
     position: relative;   
@@ -60,4 +56,13 @@ li {
     font-size: 16px;
     font-weight: 500;
     color: rgb(135, 11, 11);
+}
+.tables {
+    margin:50px;
+}
+tr, th, td{
+    padding:5px;
+}
+th {
+    font-weight: bold;
 }
