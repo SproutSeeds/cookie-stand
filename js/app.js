@@ -45,6 +45,8 @@ Stores.prototype.funcCookies = function() {
 };
 /////////////Prototype to Render/////////////
 Stores.prototype.render = function() {
+  this.funcCustomers();
+  this.funcCookies();
   // create tr
   var trEl = document.createElement('tr');
   // create td
@@ -72,8 +74,6 @@ function renderAll() {
   //forloop to render all of the prototype functions
   for(var i = 0; i < allStores.length; i++) {
     // calling each function here
-    allStores[i].funcCustomers();
-    allStores[i].funcCookies();
     allStores[i].render();
   }
   makeFooter();
@@ -83,21 +83,23 @@ function handlerOfSubmit(event) {
   event.preventDefault();//prevents the page to reload on submit.
 
   var storeNames = event.target.storeName.value;
-  var minCusto = event.target.minCust.value;
-  var maxCusto = event.target.maxCust.value;
-  var avgCookie = event.target.avgCookies.value;
+  var minCusto = parseInt(event.target.minCust.value);
+  var maxCusto = parseInt(event.target.maxCust.value);
+  var avgCookie = parseInt(event.target.avgCookies.value);
 
-  new Stores(storeNames, minCusto, maxCusto, avgCookie);
-  console.log(allStores);
+  var storeHolder = new Stores(storeNames, minCusto, maxCusto, avgCookie);
+  console.log(storeHolder);
   event.target.storeName.value = null;
   event.target.minCust.value = null;
   event.target.maxCust.value = null;
   event.target.avgCookies.value = null;
 
-  storeTable.innerHTML = '';
-
-  renderAll();
+  // storeTable.innerHTML = '';
+  document.getElementById('footer').remove();
+  storeHolder.render();
+  makeFooter();
 }
+
 //Function for making the header
 function makeHeader() {
   var trEl = document.createElement('tr');
@@ -127,6 +129,8 @@ function makeFooter() {
     }
   }
   var trEl = document.createElement('tr');
+  trEl.setAttribute('id', 'footer');
+
   var thEl = document.createElement('th');
   thEl.textContent = 'Hourly Totals';
   trEl.appendChild(thEl);
