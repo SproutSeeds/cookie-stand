@@ -60,11 +60,17 @@ li {
 .tables {
     margin:50px;
     position: relative;
-    left: 20%;
+    left: 8%;
 }
 tr, th, td{
     padding:5px;
 }
 th {
     font-weight: bold;
+}
+input:invalid {
+    border: .5px dashed red;
+}
+input:valid {
+    border: 2px solid black;
 }
