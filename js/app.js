@@ -3,10 +3,10 @@
 var hourOfOperation = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm','6pm','7pm', '8pm'];
 //An array Representing all the store instances created.
 var allStores = [];
-
+//An array representing the total cookies for each cumulative hour the stores are open.
 var eachHourTotalCookies = [];
 
-//Assigning the storeTable element's 'id' representation.
+//Assigning the storeTable element's 'id'.
 var storeTable = document.getElementById('storeTable');
 var tableForm = document.getElementById('tableForm');
 
@@ -29,9 +29,6 @@ Stores.prototype.funcCustomers = function() {
     this.min = Math.ceil(this.min);
     this.max = Math.floor(this.max);
     this.customers[i] = Math.floor(Math.random() * (this.max - this.min + 1)) + this.min;
-
-    console.log('testing');
-    console.log(this.customers[i]);
   }
 };
 //////Prototype Creation for funcCookies///////
@@ -71,9 +68,8 @@ Stores.prototype.render = function() {
 function renderAll() {
   makeHeader();
 
-  //forloop to render all of the prototype functions
+  //Applying the render method to each store in the allStores array.
   for(var i = 0; i < allStores.length; i++) {
-    // calling each function here
     allStores[i].render();
   }
   makeFooter();
@@ -99,8 +95,7 @@ function handlerOfSubmit(event) {
   storeHolder.render();
   makeFooter();
 }
-
-//Function for making the header
+//Method to make the header.
 function makeHeader() {
   var trEl = document.createElement('tr');
   var thEl = document.createElement('th');
@@ -118,7 +113,7 @@ function makeHeader() {
   trEl.appendChild(thEl);
   storeTable.appendChild(trEl);
 }
-
+//Method to make the footer.
 function makeFooter() {
   //For loops that Assigns all of the places in the eachHourTotal cookies array to hourly totals.
   for(var i = 0; i < hourOfOperation.length; i++) {
@@ -146,7 +141,6 @@ function makeFooter() {
 
   for(var l = 0; l < eachHourTotalCookies.length; l++) {
     totalCookiesForAllStores += eachHourTotalCookies[l];
-    console.log(totalCookiesForAllStores);
   }
   thEl = document.createElement('th');
   thEl.textContent = totalCookiesForAllStores;
