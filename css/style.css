@@ -1,17 +1,30 @@
-#allSheWrote {
+#welcomePage {
     margin: 5px;
     border: 5px, solid, purple;
-    padding: 50px;
+    padding: 25px;
+} 
+a {
+    display: block;
 }
-#salesNav {
-    margin: 100px, 100px, 100px, 100px;
-    border: 5px, dotted, crimson;
-    padding: 5px;
-    content: center; 
-    top: 60%;
+#tableForm {
+    text-align: center;
+}
+#submit {
+    text-align: center;
+    width: 25%;
+    margin:35px 0px 0px 0px;
+    padding: 10px;
+    font-size: 30px;
+    color: blueviolet;
+    background: darkcyan;
+}
+#navigationTopLeft {
+    width: 15%; 
+    padding: 10px;
+    text-align: center; 
     color: rgb(58, 226, 43);
     background-color: rgb(48, 140, 238);
-    font-size: 75px;
+    font-size: 50px;
 }
 .headingSales {
     font-weight: bold;
@@ -23,10 +36,8 @@
     font-weight: bold;
     font-size: 40px;
 }
-ul {
-    margin: 10px;
-    background-color: aquamarine; 
-    border-color: blueviolet;  
+h3 {
+    font-size: 25px;
 }
 h2 {
     margin: 10px;
@@ -38,32 +49,28 @@ h1 {
     font-size: 30px;
     font-family: 'Rock Salt', sans-serif;
     font-weight: bold;
+    margin: 5px;
 }
 body {
     background-color: bisque;
     background-image: center center;
     background-image: cover no-repeat;
-    position: relative;   
 }
 img {
-    bottom: 100%;
-    left: 25%;
+    /* left: 25%;
     align-content: center;
-    position: relative;
-}
-li {
-    font-family: Verdana, Georgia, Arial, Helvetica;
-    font-size: 16px;
-    font-weight: 500;
-    color: rgb(135, 11, 11);
+    position: relative; */
+    /* image-resolution: 100px; */
 }
 .tables {
     margin:50px;
     position: relative;
-    left: 8%;
+    left: 6%;
 }
 tr, th, td{
-    padding:5px;
+    padding:10px;
+    border: 2px solid rgb(31, 24, 170);
+    font-size: 24px;
 }
 th {
     font-weight: bold;
@@ -73,4 +80,42 @@ input:invalid {
 }
 input:valid {
     border: 2px solid black;
+}
+input {
+    font-size: 18px;
+    font-weight: bold;
+}
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+ul {
+    display: inline-block;
+    margin: 70px;
+}
+#boldMe {
+    font-weight: bold;
+    margin: 2px;
+}
+ol {
+    margin: 40px;
+}
+#slideShowContainer {
+  height: 480px;
+  text-align: center;
+}
+#slideShow {
+    margin: 0 auto;
+    opacity: .8;
+}
+#originStory {
+    margin: 0px 0px 0px 400px;
+    width: 750px;
+    font-size: 25px;
+    line-height: 30px;
+}
+audio {
+    visibility: hidden; 
+    width: 1px;
+    height: 1px;
 }

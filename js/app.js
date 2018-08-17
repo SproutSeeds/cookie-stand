@@ -148,7 +148,7 @@ function makeFooter() {
   storeTable.appendChild(trEl);
 }
 
-///This adds an event listener on my submit input button in relation to my form
+///This adds an event listener on my submit input button that will ultimately create and add a new store's inputted data.
 tableForm.addEventListener('submit', handlerOfSubmit);
 
 /////////Creating new objects || instances/////////
