@@ -3,4 +3,4 @@ This Salmon Cookies application gives you the ability to give a minimum and maxi
 The last column on the right hand side is totaling the amount of cookies needed per day and the footer row is totaling the amount of cookies needed each hour for all the stores listed.
 The bottom right hand cell of the table will provide the total of all the cookies needed for all stores for the entire day.
 
-mmmmm....salmon cookies... <3
+mmmmm....salmon cookies.... <3
